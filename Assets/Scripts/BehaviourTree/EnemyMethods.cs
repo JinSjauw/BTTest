@@ -106,7 +106,7 @@ namespace BehaviourTree.Runtime
 
         #region Aiming
 
-        [BTreeMethod(MethodID.Enemy_SelectAimTarget)]
+        //[BTreeMethod(MethodID.Enemy_SelectAimTarget)]
         public static NodeState Enemy_SelectAimTarget(BlackBoard blackBoard, ReadOnlySpan<FieldData> fields)
         {
             EnemyController controller = GetController(blackBoard);
@@ -119,7 +119,7 @@ namespace BehaviourTree.Runtime
             return NodeState.SUCCESS;
         }
 
-        [BTreeMethod(MethodID.Enemy_StartTrajectorySearch)]
+        //[BTreeMethod(MethodID.Enemy_StartTrajectorySearch)]
         public static NodeState Enemy_StartTrajectorySearch(BlackBoard blackBoard, ReadOnlySpan<FieldData> fields)
         {
             EnemyController controller = GetController(blackBoard);
@@ -145,7 +145,7 @@ namespace BehaviourTree.Runtime
             return result;
         }
 
-        [BTreeMethod(MethodID.Enemy_IsTrajectoryReady)]
+        //[BTreeMethod(MethodID.Enemy_IsTrajectoryReady)]
         public static NodeState Enemy_IsTrajectoryReady(BlackBoard blackBoard, ReadOnlySpan<FieldData> fields)
         {
             EnemyController controller = GetController(blackBoard);
@@ -231,7 +231,7 @@ namespace BehaviourTree.Runtime
             return NodeState.FAILURE;
         }
         
-        [BTreeMethod(MethodID.Enemy_WaitForReload)]
+        //[BTreeMethod(MethodID.Enemy_WaitForReload)]
         public static NodeState Enemy_WaitForReload(BlackBoard blackBoard, ReadOnlySpan<FieldData> fields)
         {
             EnemyController controller = GetController(blackBoard);
@@ -243,7 +243,7 @@ namespace BehaviourTree.Runtime
             return NodeState.SUCCESS;
         }
 
-        [BTreeMethod(MethodID.Enemy_Fire)]
+        //[BTreeMethod(MethodID.Enemy_Fire)]
         public static NodeState Enemy_Fire(BlackBoard blackBoard, ReadOnlySpan<FieldData> fields)
         {
             EnemyController controller = GetController(blackBoard);
