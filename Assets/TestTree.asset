@@ -33,7 +33,7 @@ MonoBehaviour:
   lastChildIndex: 0
   guid: 545fc5918ff4d4e499279d0ae5bae627
   graphPosition: {x: 0, y: 0}
-  runtimeIndex: -1
+  runtimeIndex: 0
 --- !u!114 &3870527908664297415
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -54,7 +54,7 @@ namespace BehaviourTree.Editor
             }
 
             // Check if method changed and rebuild field entries
-            MethodID selectedMethod = (MethodID)methodIDProp.enumValueIndex;
+            MethodID selectedMethod = (MethodID)methodIDProp.intValue;
             bool methodChanged = selectedMethod != lastMethodID;
             lastMethodID = selectedMethod;
 
