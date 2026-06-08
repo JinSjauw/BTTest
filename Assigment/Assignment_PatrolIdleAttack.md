@@ -11,7 +11,32 @@ Build a behaviour tree for an enemy that:
 
 The loop should run continuously — patrol → idle → patrol → idle → (interrupt with attack) → patrol → ...
 
-![Loop diagram](Images/Screenshot_Target.png)
+![Target](Images/Screenshot_Target.png)
+
+## Getting Started
+
+![Open Menu](Images/Screenshot_Menu.png)
+
+### 1. Open the Node Editor
+In the Unity menu bar, go to **Assets → Behaviour Tree → Open Behaviour Tree Node Graph**
+
+![Create Tree](Images/Screenshot_CreateTree.png)
+
+### 2. Create a New Tree Asset
+In the **Behaviour Tree editor** window, click the **Create New Tree** button to create a new tree asset. Or use the **Test_Tree.asset** file.
+
+![Wire Tree](Images/Screenshot_WireTree.png)
+
+### 3. Wire Up the Scene References
+- In the scene hierarchy, select the **MechaTankTest** GameObject inside the **Enemy GO** GameObject. In its Inspector, you will see a **TreeRunner** component (or similar runner component).
+- **Drag the tree asset** you just created into the runner's tree reference field.
+- The `patrolPointsParent` Transform reference is already set on the **BlackBoard** for you, but make sure the runner is pointing to the correct blackboard definition.
+
+### 4. Play!
+- Press **Play** in the Unity editor to run the game.
+- The enemy should start patrolling between waypoints, then idle briefly, then attack any detected target, then return to patrolling.
+
+---
 
 ## Requirements
 
