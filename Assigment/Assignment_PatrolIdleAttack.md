@@ -1,5 +1,5 @@
 # Assignment: Patrol-Idle-Attack Loop
-### [Cheatsheet](Assigment/BehaviourTree_CheatSheet.md)
+### [Cheatsheet](BehaviourTree_CheatSheet.md)
 
 ## Goal
 
