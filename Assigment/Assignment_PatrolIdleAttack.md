@@ -1,4 +1,5 @@
 # Assignment: Patrol-Idle-Attack Loop
+### [Cheatsheet](/BehaviourTree_CheatSheet.md)
 
 ## Goal
 
@@ -72,7 +73,11 @@ To add a variable: open the Blackboard Definition in the editor, click **+**, gi
 - `patrolPointsParent` is already on the blackboard — you don't need to create it.
 - The tree loops automatically: when the root's child finishes (SUCCESS or FAILURE), the whole tree re-evaluates from the top next frame.
 
-## Nodes You Have Available
+## Basic Nodes
+
+### Root 🟢
+
+This is the entry point!
 
 ### Composites
 
@@ -82,6 +87,8 @@ To add a variable: open the Blackboard Definition in the editor, click **+**, gi
 | 🟣 Purple | **SEQUENCE** | "Do this, then that." Runs children left→right, stops on first FAILURE. |
 | 🟣 Magenta | **PARALLEL** | Runs all children at once every frame. |
 | 🔵 Cyan | **PRIORITY** | Like SELECTOR, but re-evaluates from the first child every tick (can interrupt). |
+
+## Enemy Specific Nodes
 
 ### Enemy Conditions (🟡 Yellow — return SUCCESS or FAILURE only)
 
@@ -110,3 +117,5 @@ To add a variable: open the Blackboard Definition in the editor, click **+**, gi
 | Node | What it does |
 |------|-------------|
 | **`WaitSeconds`** | Wait N seconds. RUNNING while waiting, SUCCESS when done. |
+
+### More details [here](BehaviourTree_CheatSheet.md)
