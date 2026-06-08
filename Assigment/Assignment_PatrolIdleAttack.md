@@ -118,4 +118,4 @@ This is the entry point!
 |------|-------------|
 | **`WaitSeconds`** | Wait N seconds. RUNNING while waiting, SUCCESS when done. |
 
-### More details [here](Assigment/BehaviourTree_CheatSheet.md)
+### More details [here](BehaviourTree_CheatSheet.md)
