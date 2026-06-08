@@ -49,6 +49,7 @@
 *.nupkg
 **/[Pp]ackages/*
 !**/[Pp]ackages/build/
+!/[Pp]ackages/manifest.json
 
 # .NET build artifacts
 artifacts/
